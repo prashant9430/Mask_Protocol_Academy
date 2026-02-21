@@ -1,46 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>Mask Protocol Academy</title>
-<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-<h1>MASK PROTOCOL ACADEMY</h1>
-<p>Train in the Shadows | Defend the Future</p>
+<div id="bootScreen">
+Initializing Mask Protocol Academy Node...
+</div>
+
+<div id="mainSite" class="hidden">
+
+<header class="hero">
+
+<div class="logo">MASK PROTOCOL ACADEMY</div>
+
+<p class="subtitle">
+Train in the Shadows | Defend the Future
+</p>
+
+<button onclick="playAlert()">Enter Academy</button>
+
 </header>
 
-<!-- TERMINAL SECTION -->
+<!-- ABOUT -->
 
-<div class="terminalBox">
-<div id="terminalOutput"></div>
+<section class="section">
 
-<input id="terminalInput"
-placeholder="Type help for commands...">
-</div>
+<h2>About Founder</h2>
 
-<section class="courses">
+<p>
+Mask Protocol Academy was founded by <b>Prashant Pandey</b>,
+a cybersecurity enthusiast focused on ethical hacking education
+and digital defense awareness.
 
-<h2>Cybersecurity Learning Mode</h2>
+Instagram: @prashant__pandey__1
+</p>
+
+</section>
+
+<!-- ROADMAP -->
+
+<section class="section">
+
+<h2>Cyber Security Learning Roadmap</h2>
+
+<div class="grid">
 
 <div class="card">
-<h3>Beginner Security</h3>
-<p>• Cyber Awareness</p>
-<p>• Password Safety</p>
-<p>• Internet Basics</p>
+<h3>Level 1 — Fundamentals</h3>
+<p>Internet Basics</p>
+<p>Password Security</p>
+<p>Cyber Awareness</p>
 </div>
 
 <div class="card">
-<h3>Ethical Cyber Education</h3>
-<p>Learn security concepts only in lab environment.</p>
+<h3>Level 2 — Ethical Introduction</h3>
+<p>Web Security Theory</p>
+<p>Vulnerability Awareness</p>
+</div>
+
+<div class="card">
+<h3>Level 3 — Network Security</h3>
+<p>Nmap Concept</p>
+<p>Firewall Basics</p>
+</div>
+
+<div class="card">
+<h3>Level 4 — Advanced Defense</h3>
+<p>Security Architecture</p>
+<p>Threat Analysis</p>
+</div>
+
 </div>
 
 </section>
 
-<script src="script.js"></script>
+<!-- TERMINAL LAB -->
+
+<section class="section">
+
+<h2>Cyber Learning Terminal</h2>
+
+<div class="terminal">
+
+<p id="terminalOutput"></p>
+
+<input id="terminalInput"
+placeholder="Type help for commands...">
+
+</div>
+
+</section>
+
+</div>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
